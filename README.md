@@ -39,7 +39,9 @@ For this project:
     $\text{Swish}(x) = x \cdot \sigma(x)$
     
     Where:
+    
       $x$ is the input.
+    
       $\sigma(x)$ is the **Sigmoid function**
 - **Latent dimensions**:  
   - Set to `128`.
