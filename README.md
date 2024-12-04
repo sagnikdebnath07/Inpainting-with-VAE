@@ -53,7 +53,7 @@ The VAE loss function is the sum of two components:
 The total loss is given by:
 
 ```math
-\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \mathcal{L}_{\text{KL}}\
+\[\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \mathcal{L}_{\text{KL}}\]
 ```
 
 #### 1. Reconstruction Loss
