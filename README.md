@@ -34,7 +34,13 @@ For this project:
   - Image dimensions reduce by a factor of 4 after each layer.
   - 3 layers in total, resulting in a final feature size of **4×4×64**.
 - **Activation function**:  
-  - **SiLU** (Swish activation function).  
+  - **SiLU** (Swish activation function).
+    ```math
+    \text{Swish}(x) = x \cdot \sigma(x)
+    ```
+    Where:
+      $x$ is the input.
+      $\sigma(x)$ is the **Sigmoid function**
 - **Latent dimensions**:  
   - Set to `128`.
 
@@ -66,10 +72,10 @@ For continuous data (e.g., images), the reconstruction loss is often the Mean Sq
 Where:  
 - $x$: Original input.  
 - $\hat{x}$: Reconstructed input.  
-- $\q(z|x)$: Latent distribution.
+- $q(z|x)$: Latent distribution.
 
 #### 2. KL Divergence
-The KL Divergence term ensures that the learned latent distribution $\q(z|x)$ is close to the prior $\p(z)$, typically a standard normal distribution $\{N}(0, I)$:
+The KL Divergence term ensures that the learned latent distribution $q(z|x)$ is close to the prior $p(z)$, typically a standard normal distribution $\{N}(0, I)$:
 
 ```math
 \mathcal{L}_{\text{KL}} = D_{\text{KL}} \left( q(z|x) \| p(z) \right)
