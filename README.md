@@ -45,7 +45,53 @@ For this project:
   - **Tanh**, to match the pixel range of the images.
 
 ### Loss Function
-- Sum of **Reconstruction Loss** and **KL Divergence**.
+
+The VAE loss function is the sum of two components:  
+1. **Reconstruction Loss**: Measures how well the decoder reconstructs the input.  
+2. **KL Divergence (KLD)**: Ensures the latent space follows a standard normal distribution.  
+
+The total loss is given by:
+
+\[
+\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \mathcal{L}_{\text{KL}}
+\]
+
+#### 1. Reconstruction Loss
+For continuous data (e.g., images), the reconstruction loss is often the Mean Squared Error (MSE) or Binary Cross-Entropy (BCE):
+
+\[
+\mathcal{L}_{\text{reconstruction}} = \mathbb{E}_{q(z|x)} \left[ \| x - \hat{x} \|^2 \right]
+\]
+
+Where:  
+- \(x\): Original input.  
+- \(\hat{x}\): Reconstructed input.  
+- \(q(z|x)\): Latent distribution.
+
+#### 2. KL Divergence
+The KL Divergence term ensures that the learned latent distribution \(q(z|x)\) is close to the prior \(p(z)\), typically a standard normal distribution \(\mathcal{N}(0, I)\):
+
+\[
+\mathcal{L}_{\text{KL}} = D_{\text{KL}} \left( q(z|x) \| p(z) \right)
+\]
+
+For Gaussian latent variables, this can be computed as:
+
+\[
+\mathcal{L}_{\text{KL}} = \frac{1}{2} \sum \left( 1 + \log(\sigma^2) - \mu^2 - \sigma^2 \right)
+\]
+
+Where:  
+- \(\mu\): Mean of the latent distribution.  
+- \(\sigma^2\): Variance of the latent distribution.
+
+#### Final Loss
+The combined loss becomes:
+
+\[
+\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \frac{1}{2} \sum \left( 1 + \log(\sigma^2) - \mu^2 - \sigma^2 \right)
+\]
+
 
 ---
 
