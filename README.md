@@ -52,7 +52,9 @@ The VAE loss function is the sum of two components:
 
 The total loss is given by:
 
-$\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \mathcal{L}_{\text{KL}}\$
+```math
+\mathcal{L}_{\text{VAE}} = \mathcal{L}_{\text{reconstruction}} + \mathcal{L}_{\text{KL}}\
+```
 
 #### 1. Reconstruction Loss
 For continuous data (e.g., images), the reconstruction loss is often the Mean Squared Error (MSE) or Binary Cross-Entropy (BCE):
