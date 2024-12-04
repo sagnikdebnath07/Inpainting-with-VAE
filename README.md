@@ -64,16 +64,12 @@ For continuous data (e.g., images), the reconstruction loss is often the Mean Sq
 ```
 
 Where:  
-- x: Original input.  
-- x_hat: Reconstructed input.  
+- $\x$: Original input.  
+- $\hat{x}$: Reconstructed input.  
 - q(z|x): Latent distribution.
 
 #### 2. KL Divergence
-The KL Divergence term ensures that the learned latent distribution q(z|x) is close to the prior p(z), typically a standard normal distribution 
-```math
-\mathcal{N}(0, I)
-```
-:
+The KL Divergence term ensures that the learned latent distribution q(z|x) is close to the prior p(z), typically a standard normal distribution $\{N}(0, I)$:
 
 ```math
 \mathcal{L}_{\text{KL}} = D_{\text{KL}} \left( q(z|x) \| p(z) \right)
