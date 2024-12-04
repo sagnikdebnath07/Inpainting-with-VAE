@@ -35,9 +35,7 @@ For this project:
   - 3 layers in total, resulting in a final feature size of **4×4×64**.
 - **Activation function**:  
   - **SiLU** (Swish activation function).
-    ```math
-    \mathcal{L}_{\text{Swish(x)}} = \left[\x \cdot \sigma(x)]right
-    ```
+    $\text{Swish}(x) = x \cdot \sigma(x)$
     Where:
       $x$ is the input.
       $\sigma(x)$ is the **Sigmoid function**
