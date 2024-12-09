@@ -116,6 +116,9 @@ The combined loss becomes:
 The **image inpainting results** for the model trained for 10 epochs can be found in the Image Inpainting notebook.  
 The **image inpainting results** for the model trained for 30 epochs can be found in the VAE 2 notebook.  
 While the reconstruction quality is not very high, the model demonstrates the ability to perform inpainting where required.
+Inferences for model trained for 10 epochs:
+<img src="10 epoch pic 1.jpg" alt="GitHub Logo" width="300">
+
 
 ---
 
