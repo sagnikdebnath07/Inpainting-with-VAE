@@ -124,7 +124,8 @@ While the reconstruction quality is not very high, the model demonstrates the ab
 1. **Lack of computational resources**:
    - Unable to train deeper models that could better understand patterns.
 2. **Limited training duration**:
-   - Model trained for only 10 epochs, affecting reconstruction quality.
+   - Model trained for only 10 and 30 epochs, affecting reconstruction quality.
+   - Model trained for 30 epochs shows significant reconstruction quality over model trained for 10 epochs.
 
 ### Future Improvements:
 1. Train the model for more epochs (50-100 epochs) to achieve better reconstructions.
