@@ -119,6 +119,9 @@ The combined loss becomes:
 - Inferences for model trained for 10 epochs:
   - <img src="10 epoch pic 1.jpg" alt="GitHub Logo" width="400">
   - <img src="10 epoch pic 2.jpg" alt="GitHub Logo" width="400">
+- Inferences for model trained for 10 epochs:
+  - <img src="30 epochs pic 1.jpg" alt="GitHub Logo" width="400">
+  - <img src="30 epochs pic 1.jpg" alt="GitHub Logo" width="400">
 
 
 ---
