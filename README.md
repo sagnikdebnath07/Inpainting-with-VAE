@@ -118,6 +118,7 @@ The combined loss becomes:
 - While the reconstruction quality is not very high, the model demonstrates the ability to perform inpainting where required.
 - Inferences for model trained for 10 epochs:
   - <img src="10 epoch pic 1.jpg" alt="GitHub Logo" width="400">
+  - <img src="10 epoch pic 2.jpg" alt="GitHub Logo" width="400">
 
 
 ---
