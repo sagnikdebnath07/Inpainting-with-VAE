@@ -2,7 +2,7 @@
 
 ## Overview
 In this project, I implemented a custom **Variational AutoEncoder (VAE)** from scratch and performed image inpainting on the publicly available **CelebA dataset**.  
-Due to limited computational resources, I was unable to train a deeper neural network for the encoder and decoder, which could have resulted in more accurate and high-quality image reconstructions.
+Due to limited computational resources, I was unable to train the model for longer epochs, which could have resulted in more accurate and high-quality image reconstructions.
 
 ---
 
@@ -106,13 +106,15 @@ The combined loss becomes:
 - **Optimizer**:  
   - **Adam**, with an initial learning rate of `3e-4`.
 - **Epochs**:  
-  - Trained for `10 epochs` (preferable training duration is 50-100 epochs for better results).  
+  - VAE from Scratch notebook has model trained for `10 epochs` (preferable training duration is 50-100 epochs for better results).
+  - VAE 2 has model trained for `30 epochs`
   - Limited training due to computational constraints.
 
 ---
 
 ## Inference
-The **image inpainting results** can be found in the accompanying notebook.  
+The **image inpainting results** for the model trained for 10 epochs can be found in the Image Inpainting notebook.  
+The **image inpainting results** for the model trained for 30 epochs can be found in the VAE 2 notebook.  
 While the reconstruction quality is not very high, the model demonstrates the ability to perform inpainting where required.
 
 ---
