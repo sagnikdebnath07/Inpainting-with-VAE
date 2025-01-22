@@ -145,4 +145,3 @@ The combined loss becomes:
 - **CelebA Dataset**: Developed by researchers at **The Chinese University of Hong Kong**. [CelebA Dataset](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset)
 - [Blog](https://hunterheidenreich.com/posts/modern-variational-autoencoder-in-pytorch/) by Hunter Heidenreich.
 - [Blog](https://lilianweng.github.io/posts/2018-08-12-vae/) by Lilian Weng
-dog 
