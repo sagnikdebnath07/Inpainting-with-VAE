@@ -145,3 +145,28 @@ The combined loss becomes:
 - **CelebA Dataset**: Developed by researchers at **The Chinese University of Hong Kong**. [CelebA Dataset](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset)
 - [Blog](https://hunterheidenreich.com/posts/modern-variational-autoencoder-in-pytorch/) by Hunter Heidenreich.
 - [Blog](https://lilianweng.github.io/posts/2018-08-12-vae/) by Lilian Weng
+# Inpainting-with-VAE
+
+This repository contains the code for image inpainting using Variational Autoencoders (VAEs).
+
+## Overview
+
+Image inpainting is the task of filling in missing or damaged parts of an image. This repository provides an implementation of a VAE-based inpainting model.
+
+## Getting Started
+
+1.  Clone this repository.
+2.  Install the required dependencies.
+3.  Run the training script.
+4.  Use the trained model to inpaint images.
+
+
+def fibonacci_sequence(n):
+    list_fib = [0, 1]
+    for i in range(2, n):
+        list_fib.append(list_fib[i - 1] + list_fib[i - 2])
+    return list_fib
+
+
+if __name__ == "__main__":
+    print(fibonacci_sequence(10))
