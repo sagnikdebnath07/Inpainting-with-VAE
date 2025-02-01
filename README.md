@@ -156,4 +156,17 @@ def fibonacci_sequence(n):
     for _ in range(n):
         list.append(a)
         a, b = b, a + b
+    return list# Inpainting-with-VAE
+This repository contains the code for image inpainting using Variational Autoencoders.
+
+
+def fibonacci_sequence(n):
+    list = []
+    a = 0
+    b = 1
+    for _ in range(n):
+        list.append(a)
+        a, b = b, a + b
     return list
+
+print(fibonacci_sequence(10))
