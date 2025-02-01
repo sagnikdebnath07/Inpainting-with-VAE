@@ -145,3 +145,15 @@ The combined loss becomes:
 - **CelebA Dataset**: Developed by researchers at **The Chinese University of Hong Kong**. [CelebA Dataset](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset)
 - [Blog](https://hunterheidenreich.com/posts/modern-variational-autoencoder-in-pytorch/) by Hunter Heidenreich.
 - [Blog](https://lilianweng.github.io/posts/2018-08-12-vae/) by Lilian Weng
+# Inpainting-with-VAE
+This repository contains the code for image inpainting using Variational Autoencoders.
+
+
+def fibonacci_sequence(n):
+    list = []
+    a = 0
+    b = 1
+    for _ in range(n):
+        list.append(a)
+        a, b = b, a + b
+    return list
