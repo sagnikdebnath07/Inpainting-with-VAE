@@ -168,3 +168,26 @@ The combined loss becomes:
 +        return b
 +
 +print(fibonacci(10))
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,13 @@
+ - The VAE model is trained on the MNIST dataset.
+ 
+ - The Inpainting model is trained using the trained VAE model.
++
++
++def fibonacci(n):
++    a = 0
++    b = 1
++    if n < 0:
++        return "Incorrect input"
++    elif n == 0:
++        return a
++    else:
++        for i in range(2,n+1):
++            c = a + b
++            a = b
++            b = c
++        return b
++
++print(fibonacci(10))
